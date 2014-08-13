@@ -35,7 +35,6 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="<?=$uri?>/dashboard">Dashboard</a></li>
-						<li><a href="<?=$uri?>/calls">Call Log</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Users <b class="caret"></b></a>
 							<ul class="dropdown-menu">

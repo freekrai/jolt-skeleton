@@ -2,12 +2,6 @@
 
 
 <div class="list-group">
-	<a href="<?=$uri?>/calls" class="list-group-item">
-		<h4 class="list-group-item-heading">Call Log</h4>
-		<p class="list-group-item-text">
-			View a log of calls to your Twilio Account
-		</p>
-	</a>
 	<a href="<?=$uri?>/user" class="list-group-item">
 		<h4 class="list-group-item-heading">List Users</h4>
 		<p class="list-group-item-text">
