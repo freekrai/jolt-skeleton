@@ -40,6 +40,6 @@ The Twilio Skeleton Application comes complete with a few pieces already in plac
 
 3. User system, you can quickly set up a user system with the /signup, /login and /dashboard actions that are already set up. Once logged in, you will also see a user dashboard and the ability to manage other users.
 
-4. Twimlets, we've cloned the Twilio Twimlet library to work here, so you can use them to quickly build out your Twilio applications.
+You can keep these, or remove them at your leisure, I just fiind it easier to get going when you already have something to work with. 
 
-5. Basic call handling, as a demo, we've included the ability to accept an incoming call and store it in the call log. This can be quickly built on to handle whatever else you want your app to do.
+Enjoy :)
