@@ -86,25 +86,6 @@ $app->get('/signup', function() use ($app){
 $app->post('/signup', 'signup#post' );
 
 
-//	Twilio listener	--------------------------------------------------------------------------------------------
-
-$app->route('/listener', 'callController#answer');
-$app->route('/calls', 'callController#log');
-
-//	Twimlets	--------------------------------------------------------------------------------------------
-
-$app->route('/voicemail', 'twimletsController#voicemail');
-$app->route('/forward', 'twimletsController#forward');
-$app->route('/conference', 'twimletsController#conference');
-$app->route('/menu', 'twimletsController#menu');
-$app->route('/findme', 'twimletsController#findme');
-$app->route('/simulring','twimletsController#simulring');
-$app->route('/callme','twimletsController#callme');
-$app->route('/message','twimletsController#message');
-$app->route('/echo','twimletsController#echoml');
-$app->route('/holdmusic','twimletsController#holdmusic');
-$app->route('/whisper','twimletsController#whisper');
-
 //	Logged in area	--------------------------------------------------------------------------------------------
 
 $app->get('/dashboard', function() use ($app){
