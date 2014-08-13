@@ -34,7 +34,7 @@ This will route all processes through the server.php file, which whill then trea
 
 The Twilio Skeleton Application comes complete with a few pieces already in place.
 
-1. SQLite database located in content/data/data.sqlite, this database holds user information as well as a call log. It also has a post table for doing whatever else you may want it to do.
+1. SQLite database located in content/data/data.sqlite, this database holds user information, it also has a post table for doing whatever else you may want it to do.
 
 2. Views, all output is handled by the views folder located in content/views/ the filenames correspond to actions used by the system.
 
