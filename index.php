@@ -15,15 +15,6 @@ include("core/system/runtime.php");
 $app = new Jolt\Jolt();
 $app->option('source', 'config.ini');
 
-if( $app->option('twilio.enabled') != false ){
-	$client = new Services_Twilio($app->option('twilio.accountsid'), $app->option('twilio.authtoken') );
-	$fromNumber = $app->option('twilio.fromNumber');
-	
-	//	store Twilio client and our Twilio fromNumber in our session store...
-	$app->store('client',$client);
-	$app->store('fromNumber',$fromNumber);
-}
-
 if( $app->option('simperium.enabled') != false ){
 	$simperium = new Simperium\Simperium( $app->option('simperium.appid'), $app->option('simperium.token') );
 	//	store our Simperium client in our session store...
@@ -43,12 +34,6 @@ if( $app->option('pusher.enabled') != false ){
 
 if( $app->option('pdo.enabled') != false ){
 	ORM::configure( $app->option('pdo.connect') );
-}
-
-if( $app->option('db.enabled') != false ){
-	ORM::configure('mysql:host='.$app->option('db.host').';dbname='.$app->option('db.name'));
-	ORM::configure('username', $app->option('db.user') );
-	ORM::configure('password', $app->option('db.pass') );
 }
 
 //	Logout	--------------------------------------------------------------------------------------------
